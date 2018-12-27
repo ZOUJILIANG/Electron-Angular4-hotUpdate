@@ -23,7 +23,7 @@
     "publish": [
       {
         "provider": "generic",
-        "url": "http://192.168.1.148:8001/"
+        "url": "http://192.168.1.148:8001/"  // 服务器地址，这里我做了本地服务器，需要改成你自己的
       }
     ],
     "files": [
@@ -72,12 +72,6 @@
     "bootstrap": "3.3.7",
     "c-cui": "1.4.0-TAIJI",
     "c-cwm": "1.4.0-TAIJI",
-    "c-m-learntutor-portal": "2.1.0-SNAPSHOT",
-    "c-s-jcsj-query": "2.3.0-RELEASE",
-    "c-s-tutor-kp-mapApi": "2.1.0-SNAPSHOT",
-    "c-s-tutor-testworkshop-searchApi": "2.1.0-SNAPSHOT",
-    "c-s-tutor-testworkshopApi": "2.1.0-SNAPSHOT",
-    "c-s-yh": "2.3.0-RELEASE",
     "c-wui": "1.4.0-TAIJI",
     "core-js": "2.4.1",
     "font-awesome": "4.7.0",

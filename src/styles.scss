@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+/* -------- toast start -------- */
+#toast-container.toast-top-center {
+    width: initial;
+    top: initial;
+    right: 12px;
+    bottom: 0px;
+    left: initial;
+}
+/* 修复c-cui组件中，.toast-success样式导致toast颜色被覆盖的bug */
+  .toast-success {
+    background-color: #51a351;
+  }
+  /* 修复c-cui组件中，伪类#toast-container > .toast-success:before{content: "\F00C";}
+                      伪类#toast-container > .toast-error:before{content: "\F071";}
+  导致toast出现两个图标的bug */
+  .icon-success {
+    background-image: none !important;
+  }
+  .icon-error {
+    background-image: none !important;
+  }
+  .icon-warning {
+    background-image: none !important;
+  }
+  #toast-container .toast.toast-info:before {
+    content: '';
+  }
+  #toast-container > .toast-warning:before {
+    content: '';
+  }
+  .icon-info:before {
+    content: '';
+  }
+  .icon-warning:before {
+    // content: '';
+    font-size: 24px;
+    float: left;
+    color: #FFF;
+    padding: 12px 10px;
+  }
+  @media (max-width: 480px) and (min-width: 241px){
+    #toast-container .toast-close-button {
+      top: -0.63em;
+    }
+  }
+  #toast-container .toast-close-button {
+    top: -0.63em;
+    right: 0;
+  }
+  #toast-container > .toast:before {
+    line-height: 18px;
+  }
+
+  @media (min-width: 768px) {
+    .md-skin .left-app-wrapper.left-menu-wrapper {
+      margin-left: 0px !important;
+    }
+  }
+
+  body.md-skin {
+      background-color: #f3f3f4 !important;
+  }
+
+  ::-webkit-scrollbar {width: 6px;height:6px;}
+  ::-webkit-scrollbar-track-piece{background-color: #eee;margin: -2px;}
+  ::-webkit-scrollbar-thumb{background: #aaa;min-height: 150px;min-width: 150px;border-radius: 10px;}
+  ::-webkit-scrollbar-thumb:vertical:hover{background: #555555}
+  ::-webkit-scrollbar-thumb:horizontal:hover{background: #555555}
+  

@@ -1,0 +1,14 @@
+<div id="content">
+  <div class="login-header">
+    <img src="assets/login-header.jpg" alt="" style="width: 40px">
+  </div>
+  <form #comboForm="ngForm">
+    <div class="form-group">
+      <div>
+        <button class="btn btn-sm btn-primary btn-rounded btn-block" type="submit" (click)="login(comboForm.value)">进入</button>
+        <button class="btn btn-sm btn-primary btn-rounded btn-block" type="submit" (click)="checkUpdate()">检查更新</button>
+      </div>
+    </div>
+  </form>
+</div>
+<c-cui-loadding class="loadding" [show]="showLoadding"></c-cui-loadding>
